@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+
+        <div class="heading">
+            <span class="icon">🌡️</span>
+            <h1>Temperature Converter</h1>
+            <p>Convert temperatures with ease and accuracy.</p>
+        </div>
+
+        <div class="converter-card">
+
+            <h2>Enter Temperature</h2>
+
+            <label for="temperature">Temperature Value</label>
+
+            <input
+                type="text"
+                id="temperature"
+                placeholder="Enter temperature"
+                inputmode="decimal"
+                autocomplete="off"
+            >
+
+            <p id="error" class="error"></p>
+
+            <label for="unit">Select Input Unit</label>
+
+            <select id="unit">
+                <option value="C">Celsius (°C)</option>
+                <option value="F">Fahrenheit (°F)</option>
+                <option value="K">Kelvin (K)</option>
+            </select>
+
+            <button id="convertBtn">Convert Temperature</button>
+
+            <div class="results" id="results">
+
+                <h2>Conversion Results</h2>
+
+                <div class="result-box">
+                    <span>Celsius</span>
+                    <h3 id="celsius">-- °C</h3>
+                </div>
+
+                <div class="result-box">
+                    <span>Fahrenheit</span>
+                    <h3 id="fahrenheit">-- °F</h3>
+                </div>
+
+                <div class="result-box">
+                    <span>Kelvin</span>
+                    <h3 id="kelvin">-- K</h3>
+                </div>
+
+            </div>
+
+        </div>
+
+        <footer>
+            <p>Designed & Developed with ❤️</p>
+            <p>Temperature Converter | Task 3</p>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
